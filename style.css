@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* 1rem */
+    font-size: 16px;
+}
+
+label {
+    display: block;
+}
+
+input, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.5rem;
+    margin-top: .5rem;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+textarea {
+    height: 6rem;
+}
+
+button {
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: orangered;
+    margin-left: 5rem;
+}
+
+button:hover {
+    background-color: rgb(121, 172, 214);
+}
+
+button[type="reset"]:hover {
+    background-color: rgb(255, 119, 70);
+}
+
+form p:last-child {
+    text-align: center;
+}
+
+form {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+}
