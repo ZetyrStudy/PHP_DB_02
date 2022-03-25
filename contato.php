@@ -18,7 +18,7 @@
 
         <p>
             <label for="nome">Seu nome:</label>
-            <input type="text" name="nome" id="nome" required minlength="3" autofocus>
+            <input type="text" name="nome" id="nome" required minlength="3">
         </p>
 
         <p>

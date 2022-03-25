@@ -57,3 +57,43 @@ form {
     max-width: 450px;
     margin: auto;
 }
+
+div.contatos {
+    display: table;
+    margin: auto;
+}
+
+table.contatos {
+    margin: auto;
+    font-size: small;
+}
+
+table.contatos, table.contatos th, table.contatos td {
+    padding: .2rem .3rem;
+}
+
+table.contatos th {
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+
+table.contatos tr:nth-child(even) {
+    background-color: rgb(224, 224, 224);
+}
+
+table.contatos tr:nth-child(odd) {
+    background-color: rgb(192, 192, 192);
+}
+
+.opcoes button {
+    text-align: center;
+    font-size: small;
+    padding: .2rem;
+    border: none;
+    margin: 0;
+    display: inline;
+}
+
+table.contatos tr td:first-child {
+    text-align: right;
+}

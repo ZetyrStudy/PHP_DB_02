@@ -116,9 +116,13 @@ echo '</pre>';
 
 <body>
 
-    <h2>Faça contato</h2>
+    <div class="contatos">
 
-    <?= $feedback ?>
+        <h2>Faça contato</h2>
+
+        <?= $feedback ?>
+
+    </div>
 
 </body>
 
