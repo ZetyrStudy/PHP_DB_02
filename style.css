@@ -2,98 +2,123 @@
     box-sizing: border-box;
 }
 
-html, body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* 1rem */
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
 
-label {
-    display: block;
+html {
+    background-color: grey;
+    background-attachment: fixed;
+    background-image: url('https://picsum.photos/640/455');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-input, textarea, button {
+body {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.bloco {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form, .caixa {
+    display: table;
+    background-color: #ddd;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 7px 7px 7px -2px #4D4D4D;
+}
+
+h2 {
+    margin: 0;
+}
+
+input,
+button {
     font-family: inherit;
     font-size: inherit;
-    padding: 0.5rem;
-    margin-top: .5rem;
 }
 
-input, textarea {
+form table {
     width: 100%;
 }
 
-textarea {
-    height: 6rem;
+form table td {
+    padding: .3rem;
+}
+
+form table tr td:first-child {
+    font-weight: bold;
+    text-align: right;
+}
+
+.botoes td:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+button {
+    padding: .3rem;
+    border: 1px solid grey;
+    border-radius: .3rem;
+}
+
+input {
+    width: 100%;
+}
+
+input[type=checkbox] {
+    width: auto;
 }
 
 button {
-    background-color: steelblue;
     color: white;
-    font-weight: bold;
-    cursor: pointer;
+    width: 45%;
 }
 
-button[type="reset"] {
+button[type=submit] {
+    background-color: steelblue;
+}
+
+button[type=reset] {
     background-color: orangered;
-    margin-left: 5rem;
 }
 
-button:hover {
-    background-color: rgb(121, 172, 214);
-}
-
-button[type="reset"]:hover {
-    background-color: rgb(255, 119, 70);
-}
-
-form p:last-child {
-    text-align: center;
-}
-
-form {
-    position: relative;
-    width: 100%;
-    max-width: 450px;
-    margin: auto;
-}
-
-div.contatos {
+button[type=button] {
+    background: slategray;
+    color: white;
     display: table;
     margin: auto;
 }
 
-table.contatos {
-    margin: auto;
-    font-size: small;
+.cadastrado button {
+    display: block;
+    width: 100%;
 }
 
-table.contatos, table.contatos th, table.contatos td {
-    padding: .2rem .3rem;
-}
-
-table.contatos th {
-    background-color: rgb(73, 73, 73);
-    color: white;
-}
-
-table.contatos tr:nth-child(even) {
-    background-color: rgb(224, 224, 224);
-}
-
-table.contatos tr:nth-child(odd) {
-    background-color: rgb(192, 192, 192);
-}
-
-.opcoes button {
-    text-align: center;
-    font-size: small;
-    padding: .2rem;
-    border: none;
-    margin: 0;
-    display: inline;
-}
-
-table.contatos tr td:first-child {
-    text-align: right;
+.index, .index button {
+    width: 100%;
 }
